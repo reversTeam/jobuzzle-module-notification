@@ -1,0 +1,13 @@
+#import (Config.path +'/Kernel/Template/View/MasterView') = MasterView;
+
+class NotificationPanelTemplateMainView extends MasterView {
+
+	render : function () {
+		return (<div id="notification_panel">
+			Notification Panel
+		</div>);
+	}
+
+}
+
+#export NotificationPanelTemplateMainView;

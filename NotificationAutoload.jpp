@@ -1,0 +1,9 @@
+#import (Config.path +'/Kernel/Autoload/MasterAutoload') = MasterAutoload;
+
+class NotificationAutoload extends MasterAutoload {
+
+	confModuleName = 'Notification';
+
+}
+
+#export NotificationAutoload;
