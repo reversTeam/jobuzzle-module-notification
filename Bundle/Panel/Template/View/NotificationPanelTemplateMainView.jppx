@@ -7,12 +7,12 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-08-08 14:32:21
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-11 21:24:05
 **************************************************************/
 
 class NotificationPanelTemplateMainView extends MasterView {
 
-	render : function () {
+	public render : function () {
 		return (<div id="notification_panel">
 			Notification Panel
 		</div>);
