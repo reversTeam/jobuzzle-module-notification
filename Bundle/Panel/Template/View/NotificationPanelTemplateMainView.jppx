@@ -7,14 +7,25 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-11 21:24:05
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-10-10 23:16:09
 **************************************************************/
 
 class NotificationPanelTemplateMainView extends MasterView {
 
+	getPlaceholder : function () {
+		var noNotif = "Vous n'avez pas de notifications";
+
+		return <div className="noNotif">{noNotif}</div>;
+	}
+
 	public render : function () {
+		var notifications = {};
+
 		return (<div id="notification_panel">
-			Notification Panel
+			{!Object.keys(notifications).length
+				? this.getPlaceholder()
+				: null
+			}
 		</div>);
 	}
 
